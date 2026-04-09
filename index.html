@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Store — Moda feminina e masculina com estilo, qualidade e tendência." />
+  <title>Aurora Store | Moda & Estilo</title>
+
+  <!-- Favicon — "A" dourado em fundo preto -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='16' y='23' font-family='Georgia%2C serif' font-size='20' font-weight='700' font-style='italic' fill='%23c9a84c' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome (ícones) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================
+       HEADER / NAVEGAÇÃO
+  ========================================= -->
+  <header id="header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo" aria-label="Aurora Store - Página inicial">
+        <span class="logo-text">Aurora</span>
+        <span class="logo-sub">STORE</span>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-desktop" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ícone de Carrinho + Hamburguer -->
+      <div class="header-actions">
+        <button class="cart-btn" aria-label="Ver carrinho">
+          <i class="fas fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+      <ul>
+        <li><a href="#inicio" class="nav-mobile-link">Início</a></li>
+        <li><a href="#produtos" class="nav-mobile-link">Produtos</a></li>
+        <li><a href="#sobre" class="nav-mobile-link">Sobre</a></li>
+        <li><a href="#contato" class="nav-mobile-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1920&q=80"
+        alt="Nova Coleção Aurora Store 2026"
+        class="hero-bg"
+        loading="eager"
+      />
+      <div class="hero-content container">
+        <p class="hero-eyebrow reveal">Coleção Exclusiva</p>
+        <h1 class="hero-title reveal">
+          Nova coleção<br /><em>2026</em>
+        </h1>
+        <p class="hero-subtitle reveal">Estilo que define quem você é</p>
+        <a href="#produtos" class="btn btn-gold reveal">Ver Produtos</a>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         BARRA DE DIFERENCIAIS
+    ========================================= -->
+    <section class="features-bar">
+      <div class="container features-grid">
+        <div class="feature reveal">
+          <i class="fas fa-truck"></i>
+          <span>Frete Grátis acima de R$ 299</span>
+        </div>
+        <div class="feature reveal">
+          <i class="fas fa-rotate-left"></i>
+          <span>Trocas em até 30 dias</span>
+        </div>
+        <div class="feature reveal">
+          <i class="fas fa-lock"></i>
+          <span>Compra 100% Segura</span>
+        </div>
+        <div class="feature reveal">
+          <i class="fas fa-star"></i>
+          <span>Qualidade Premium</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO DE PRODUTOS
+    ========================================= -->
+    <section id="produtos" class="products">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Coleção 2026</p>
+          <h2 class="section-title">Nossos Produtos</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Grade de produtos -->
+        <div class="products-grid">
+
+          <!-- Produto 1 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1551489186-cf8726f514f8?auto=format&fit=crop&w=500&q=80"
+                alt="Blazer Estruturado Preto"
+                loading="lazy"
+              />
+              <span class="product-badge">Novo</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Blazer Estruturado</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 299,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Blazer Estruturado" data-price="299.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 2 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80"
+                alt="Vestido Midi Elegante"
+                loading="lazy"
+              />
+              <span class="product-badge">Destaque</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Vestido Midi Elegante</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price-old">R$ 229,90</span>
+                <span class="product-price">R$ 189,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Vestido Midi Elegante" data-price="189.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 3 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80"
+                alt="Calça Alfaiataria"
+                loading="lazy"
+              />
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Calça Alfaiataria</h3>
+              <p class="product-category">Unissex</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 159,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Calça Alfaiataria" data-price="159.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 4 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&q=80"
+                alt="Blusa de Seda"
+                loading="lazy"
+              />
+              <span class="product-badge sale">-20%</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Blusa de Seda</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price-old">R$ 159,90</span>
+                <span class="product-price">R$ 129,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Blusa de Seda" data-price="129.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 5 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80"
+                alt="Sobretudo Elegante"
+                loading="lazy"
+              />
+              <span class="product-badge">Premium</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Sobretudo Elegante</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 449,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Sobretudo Elegante" data-price="449.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 6 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80"
+                alt="Saia Plissada"
+                loading="lazy"
+              />
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Saia Plissada</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 139,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Saia Plissada" data-price="139.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 7 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=500&q=80"
+                alt="Jaqueta de Couro"
+                loading="lazy"
+              />
+              <span class="product-badge">Novo</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Jaqueta de Couro</h3>
+              <p class="product-category">Unissex</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 389,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Jaqueta de Couro" data-price="389.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 8 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80"
+                alt="Conjunto Coordenado"
+                loading="lazy"
+              />
+              <span class="product-badge sale">-15%</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Conjunto Coordenado</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price-old">R$ 259,90</span>
+                <span class="product-price">R$ 219,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Conjunto Coordenado" data-price="219.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 9 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=500&q=80"
+                alt="Camisa Social Slim"
+                loading="lazy"
+              />
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camisa Social Slim</h3>
+              <p class="product-category">Masculino</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 119,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Camisa Social Slim" data-price="119.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 10 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1572804013427-4d7ca7268217?auto=format&fit=crop&w=500&q=80"
+                alt="Vestido Longo Floral"
+                loading="lazy"
+              />
+              <span class="product-badge">Premium</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Vestido Longo Floral</h3>
+              <p class="product-category">Feminino</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 249,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Vestido Longo Floral" data-price="249.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 11 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+                alt="Tênis Minimalista"
+                loading="lazy"
+              />
+              <span class="product-badge sale">-25%</span>
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tênis Minimalista</h3>
+              <p class="product-category">Unissex</p>
+              <div class="product-price-row">
+                <span class="product-price-old">R$ 299,90</span>
+                <span class="product-price">R$ 224,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Tênis Minimalista" data-price="224.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 12 -->
+          <article class="product-card reveal">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80"
+                alt="Camiseta Premium"
+                loading="lazy"
+              />
+              <div class="product-overlay">
+                <button class="btn-quick" aria-label="Visualização rápida">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-wishlist" aria-label="Adicionar à lista de desejos">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Premium</h3>
+              <p class="product-category">Unissex</p>
+              <div class="product-price-row">
+                <span class="product-price">R$ 79,90</span>
+              </div>
+              <button class="btn btn-buy" data-product="Camiseta Premium" data-price="79.90">
+                <i class="fas fa-bag-shopping"></i> Comprar
+              </button>
+            </div>
+          </article>
+
+        </div><!-- /products-grid -->
+
+        <div class="products-cta reveal">
+          <a href="#contato" class="btn btn-outline">Ver toda a coleção</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         BANNER PROMOCIONAL
+    ========================================= -->
+    <section id="destaque" class="promo-banner">
+      <div class="promo-inner">
+        <div class="container">
+          <div class="promo-content">
+            <div class="promo-text reveal">
+              <p class="promo-eyebrow">Oferta Especial</p>
+              <h2 class="promo-title">Frete Grátis<br />para todo o Brasil</h2>
+              <p class="promo-desc">Nas compras acima de R$ 299,90 · Válido até 30/04/2026</p>
+              <a href="#produtos" class="btn btn-gold">Aproveitar agora</a>
+            </div>
+            <div class="promo-numbers reveal">
+              <div class="promo-stat">
+                <span class="stat-number">+2K</span>
+                <span class="stat-label">Clientes satisfeitos</span>
+              </div>
+              <div class="promo-stat">
+                <span class="stat-number">+150</span>
+                <span class="stat-label">Peças exclusivas</span>
+              </div>
+              <div class="promo-stat">
+                <span class="stat-number">5★</span>
+                <span class="stat-label">Avaliação média</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO SOBRE
+    ========================================= -->
+    <section id="sobre" class="about">
+      <div class="container about-grid">
+
+        <div class="about-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80"
+            alt="Interior da Aurora Store"
+            loading="lazy"
+          />
+          <div class="about-img-accent"></div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="section-eyebrow">Quem somos</p>
+          <h2 class="section-title">Nossa História</h2>
+          <div class="section-divider"></div>
+          <p class="about-text">
+            A <strong>Aurora Store</strong> nasceu da paixão por moda consciente e estilo atemporal.
+            Acreditamos que cada peça de roupa conta uma história — e a nossa história é feita
+            com você em mente.
+          </p>
+          <p class="about-text">
+            Trabalhamos com fornecedores cuidadosamente selecionados para garantir qualidade
+            premium em cada detalhe. Desde o caimento perfeito até os tecidos nobres,
+            cada produto é pensado para realçar a sua identidade.
+          </p>
+          <ul class="about-list">
+            <li><i class="fas fa-check"></i> Peças exclusivas e atemporais</li>
+            <li><i class="fas fa-check"></i> Tecidos de alta qualidade</li>
+            <li><i class="fas fa-check"></i> Tendências internacionais</li>
+            <li><i class="fas fa-check"></i> Atendimento personalizado</li>
+          </ul>
+          <a href="#contato" class="btn btn-dark">Fale conosco</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================
+         DEPOIMENTOS
+    ========================================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Depoimentos</p>
+          <h2 class="section-title">O que nossos clientes dizem</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"As peças da Aurora Store são incríveis! A qualidade dos tecidos e o caimento são perfeitos. Com certeza voltarei a comprar."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="Ana Luiza" loading="lazy" />
+              <div>
+                <strong>Ana Luiza</strong>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Comprei o blazer estruturado e recebi vários elogios! Entrega super rápida e embalagem sofisticada. Recomendo demais."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="Mariana Costa" loading="lazy" />
+              <div>
+                <strong>Mariana Costa</strong>
+                <span>Rio de Janeiro, RJ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Atendimento excepcional! Me ajudaram a escolher o tamanho certo e o vestido ficou maravilhoso. A Aurora Store é minha loja favorita!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Camila Ferreira" loading="lazy" />
+              <div>
+                <strong>Camila Ferreira</strong>
+                <span>Curitiba, PR</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO DE CONTATO
+    ========================================= -->
+    <section id="contato" class="contact">
+      <div class="container contact-grid">
+
+        <!-- Informações de contato -->
+        <div class="contact-info reveal">
+          <p class="section-eyebrow">Fale Conosco</p>
+          <h2 class="section-title">Entre em<br />Contato</h2>
+          <div class="section-divider"></div>
+
+          <p class="contact-desc">
+            Tire suas dúvidas, faça seu pedido ou entre em contato para saber mais
+            sobre a nossa coleção. Estamos aqui para atender você!
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:contato@aurorastore.com.br">contato@aurorastore.com.br</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>(11) 94872-3651</span>
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>Rua Oscar Freire, 987 — Jardins, São Paulo, SP</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Seg–Sex: 9h às 18h · Sáb: 10h às 15h</span>
+            </li>
+          </ul>
+
+          <!-- Botão WhatsApp -->
+          <a
+            href="https://wa.me/5511948723651?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Aurora%20Store."
+            class="btn btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+        </div>
+
+        <!-- Formulário -->
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nome completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <select id="subject" name="subject">
+                <option value="">Selecione um assunto</option>
+                <option value="pedido">Fazer um pedido</option>
+                <option value="troca">Troca / Devolução</option>
+                <option value="duvida">Dúvida sobre produto</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escreva sua mensagem..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar mensagem
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <!-- Coluna 1: Logo e descrição -->
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo-footer">
+          <span class="logo-text">Aurora</span>
+          <span class="logo-sub">STORE</span>
+        </a>
+        <p>Moda com propósito. Estilo com identidade. Aurora Store — sua coleção favorita desde 2020.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram Aurora Store" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook Aurora Store" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="TikTok Aurora Store" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" aria-label="Pinterest Aurora Store" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Coluna 2: Links rápidos -->
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Categorias -->
+      <div class="footer-links">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#produtos">Feminino</a></li>
+          <li><a href="#produtos">Masculino</a></li>
+          <li><a href="#produtos">Acessórios</a></li>
+          <li><a href="#produtos">Sale</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Informações -->
+      <div class="footer-links">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="#">Política de Trocas</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+          <li><a href="#">Guia de Tamanhos</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Rodapé inferior -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Aurora Store. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart" style="color: var(--gold)"></i> para portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================
+       BOTÃO VOLTAR AO TOPO
+  ========================================= -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- =========================================
+       TOAST DE NOTIFICAÇÃO
+  ========================================= -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- =========================================
+       CARRINHO DRAWER
+  ========================================= -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-drawer-header">
+      <h3><i class="fas fa-bag-shopping"></i> Meu Carrinho</h3>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Fechar carrinho">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <!-- Estado vazio -->
+      <div class="cart-empty-state" id="cartEmptyState">
+        <i class="fas fa-bag-shopping"></i>
+        <p>Seu carrinho está vazio</p>
+        <span>Adicione produtos para continuar</span>
+      </div>
+
+      <!-- Lista de itens -->
+      <ul class="cart-items-list" id="cartItemsList"></ul>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="cart-summary">
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">R$ 0,00</span>
+        </div>
+        <div class="cart-summary-row">
+          <span>Frete</span>
+          <span id="cartShippingLabel" class="cart-free-shipping">Grátis</span>
+        </div>
+        <div class="cart-summary-row cart-total-row">
+          <span>Total</span>
+          <span id="cartTotalLabel">R$ 0,00</span>
+        </div>
+      </div>
+      <button class="btn btn-gold btn-full" id="checkoutBtn">
+        <i class="fas fa-lock"></i> Finalizar Compra
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================
+       MODAL DE CHECKOUT
+  ========================================= -->
+  <div class="checkout-overlay" id="checkoutOverlay" aria-hidden="true"></div>
+
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Finalizar compra">
+
+    <!-- Indicador de etapas -->
+    <div class="checkout-steps">
+      <div class="checkout-step active" data-step="1">
+        <div class="step-circle">1</div>
+        <span>Dados</span>
+      </div>
+      <div class="checkout-step-line"></div>
+      <div class="checkout-step" data-step="2">
+        <div class="step-circle">2</div>
+        <span>Entrega</span>
+      </div>
+      <div class="checkout-step-line"></div>
+      <div class="checkout-step" data-step="3">
+        <div class="step-circle">3</div>
+        <span>Pagamento</span>
+      </div>
+    </div>
+
+    <!-- Etapa 1: Dados pessoais -->
+    <div class="checkout-panel active" id="checkoutStep1">
+      <h3 class="checkout-panel-title">Dados Pessoais</h3>
+      <div class="checkout-form-grid">
+        <div class="form-group">
+          <label for="ckName">Nome completo</label>
+          <input type="text" id="ckName" placeholder="Seu nome completo" value="Maria Eduarda Santos" />
+        </div>
+        <div class="form-group">
+          <label for="ckEmail">E-mail</label>
+          <input type="email" id="ckEmail" placeholder="seu@email.com" value="maria.eduarda@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="ckCpf">CPF</label>
+          <input type="text" id="ckCpf" placeholder="000.000.000-00" value="012.345.678-90" maxlength="14" />
+        </div>
+        <div class="form-group">
+          <label for="ckPhone">Telefone</label>
+          <input type="text" id="ckPhone" placeholder="(11) 00000-0000" value="(11) 94872-3651" maxlength="15" />
+        </div>
+      </div>
+      <div class="checkout-actions">
+        <button class="btn btn-outline checkout-cancel-btn" id="checkoutCancelBtn">Cancelar</button>
+        <button class="btn btn-gold" id="toStep2Btn">Continuar <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Etapa 2: Endereço de entrega -->
+    <div class="checkout-panel" id="checkoutStep2">
+      <h3 class="checkout-panel-title">Endereço de Entrega</h3>
+      <div class="checkout-form-grid">
+        <div class="form-group">
+          <label for="ckCep">CEP</label>
+          <input type="text" id="ckCep" placeholder="00000-000" value="01426-001" maxlength="9" />
+        </div>
+        <div class="form-group form-group--wide">
+          <label for="ckStreet">Rua / Avenida</label>
+          <input type="text" id="ckStreet" placeholder="Nome da rua" value="Rua Oscar Freire" />
+        </div>
+        <div class="form-group">
+          <label for="ckNumber">Número</label>
+          <input type="text" id="ckNumber" placeholder="Nº" value="987" />
+        </div>
+        <div class="form-group">
+          <label for="ckComp">Complemento</label>
+          <input type="text" id="ckComp" placeholder="Apto, bloco..." value="Apto 42" />
+        </div>
+        <div class="form-group">
+          <label for="ckNeigh">Bairro</label>
+          <input type="text" id="ckNeigh" placeholder="Bairro" value="Jardins" />
+        </div>
+        <div class="form-group">
+          <label for="ckCity">Cidade</label>
+          <input type="text" id="ckCity" placeholder="Cidade" value="São Paulo" />
+        </div>
+        <div class="form-group">
+          <label for="ckState">Estado</label>
+          <select id="ckState">
+            <option value="SP" selected>SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="PR">PR</option>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="BA">BA</option>
+            <option value="GO">GO</option>
+            <option value="DF">DF</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkout-actions">
+        <button class="btn btn-outline" id="backToStep1Btn"><i class="fas fa-arrow-left"></i> Voltar</button>
+        <button class="btn btn-gold" id="toStep3Btn">Continuar <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Etapa 3: Pagamento -->
+    <div class="checkout-panel" id="checkoutStep3">
+      <h3 class="checkout-panel-title">Pagamento</h3>
+
+      <!-- Seletor de método -->
+      <div class="payment-methods">
+        <label class="payment-method active" id="methodCard">
+          <input type="radio" name="payMethod" value="card" checked />
+          <i class="fas fa-credit-card"></i> Cartão de Crédito
+        </label>
+        <label class="payment-method" id="methodPix">
+          <input type="radio" name="payMethod" value="pix" />
+          <i class="fas fa-qrcode"></i> Pix
+        </label>
+        <label class="payment-method" id="methodBoleto">
+          <input type="radio" name="payMethod" value="boleto" />
+          <i class="fas fa-barcode"></i> Boleto
+        </label>
+      </div>
+
+      <!-- Formulário de cartão -->
+      <div class="card-form" id="cardForm">
+        <div class="card-visual">
+          <div class="card-chip"><i class="fas fa-microchip"></i></div>
+          <div class="card-number-display" id="cardNumberDisplay">5162 8473 9021 4856</div>
+          <div class="card-bottom">
+            <div class="card-holder-display" id="cardHolderDisplay">MARIA E SANTOS</div>
+            <div class="card-expiry-display" id="cardExpiryDisplay">08/29</div>
+          </div>
+          <div class="card-brand"><i class="fab fa-cc-mastercard"></i></div>
+        </div>
+        <div class="checkout-form-grid">
+          <div class="form-group form-group--wide">
+            <label for="ckCardNumber">Número do cartão</label>
+            <input type="text" id="ckCardNumber" placeholder="0000 0000 0000 0000" value="5162 8473 9021 4856" maxlength="19" />
+          </div>
+          <div class="form-group form-group--wide">
+            <label for="ckCardName">Nome no cartão</label>
+            <input type="text" id="ckCardName" placeholder="Como está no cartão" value="MARIA E SANTOS" />
+          </div>
+          <div class="form-group">
+            <label for="ckCardExpiry">Validade</label>
+            <input type="text" id="ckCardExpiry" placeholder="MM/AA" value="08/29" maxlength="5" />
+          </div>
+          <div class="form-group">
+            <label for="ckCardCvv">CVV</label>
+            <input type="text" id="ckCardCvv" placeholder="000" value="371" maxlength="3" />
+          </div>
+          <div class="form-group form-group--wide">
+            <label for="ckInstallments">Parcelas</label>
+            <select id="ckInstallments"></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel Pix -->
+      <div class="pix-panel" id="pixPanel" style="display:none;">
+        <div class="pix-qr">
+          <div class="pix-qr-placeholder">
+            <i class="fas fa-qrcode"></i>
+            <span>QR Code Pix</span>
+          </div>
+        </div>
+        <p class="pix-key-label">Chave Pix (CNPJ):</p>
+        <div class="pix-key-box">
+          <span>12.345.678/0001-90</span>
+          <button class="pix-copy-btn" id="pixCopyBtn"><i class="fas fa-copy"></i> Copiar</button>
+        </div>
+        <p class="pix-info">O pagamento é confirmado em até <strong>5 minutos</strong> após o envio.</p>
+      </div>
+
+      <!-- Painel Boleto -->
+      <div class="boleto-panel" id="boletoPanel" style="display:none;">
+        <div class="boleto-icon"><i class="fas fa-barcode"></i></div>
+        <p>O boleto será gerado após confirmar o pedido.</p>
+        <p class="boleto-info">Prazo de pagamento: <strong>3 dias úteis</strong>.<br />Seu pedido é reservado por 24h.</p>
+      </div>
+
+      <!-- Resumo do pedido -->
+      <div class="order-summary">
+        <h4>Resumo do Pedido</h4>
+        <div id="orderSummaryItems"></div>
+        <div class="order-summary-total">
+          <span>Total</span>
+          <span id="orderSummaryTotal">R$ 0,00</span>
+        </div>
+      </div>
+
+      <div class="checkout-actions">
+        <button class="btn btn-outline" id="backToStep2Btn"><i class="fas fa-arrow-left"></i> Voltar</button>
+        <button class="btn btn-gold" id="confirmOrderBtn">
+          <i class="fas fa-lock"></i> Confirmar Pedido
+        </button>
+      </div>
+    </div>
+
+    <!-- Tela de confirmação (sucesso) -->
+    <div class="checkout-panel checkout-success" id="checkoutSuccess">
+      <div class="success-icon"><i class="fas fa-circle-check"></i></div>
+      <h3>Pedido Confirmado!</h3>
+      <p class="success-order-num">Pedido <strong id="orderNumber">#AUR-00000</strong></p>
+      <p class="success-msg">Obrigada pela sua compra, <span id="successName">Maria</span>! 🎉<br/>
+        Você receberá a confirmação no e-mail <span id="successEmail">—</span>.</p>
+      <div class="success-details">
+        <div><i class="fas fa-truck"></i> Entrega estimada: <strong>3 a 5 dias úteis</strong></div>
+        <div><i class="fas fa-envelope"></i> Acompanhe pelo e-mail cadastrado</div>
+      </div>
+      <button class="btn btn-gold" id="successCloseBtn">Continuar Comprando</button>
+    </div>
+
+  </div><!-- /checkout-modal -->
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
